@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Panthers: MyString
+  last_name: MyString
+  first_name: MyString
+  number: 1
+  position: MyText
+  years_pro: 1
+
+two:
+  Panthers: MyString
+  last_name: MyString
+  first_name: MyString
+  number: 1
+  position: MyText
+  years_pro: 1

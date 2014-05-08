@@ -1,0 +1,2 @@
+module CarolinaPanthersHelper
+end

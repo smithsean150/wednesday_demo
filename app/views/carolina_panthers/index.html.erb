@@ -1,0 +1,35 @@
+<h1>The Carolina Panthers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Last name</th>
+      <th>First name</th>
+      <th>Number</th>
+      <th>Position</th>
+      <th>Age</th>
+      <th>Years pro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @carolina_panthers.each do |carolina_panther| %>
+      <tr>
+        <td><%= carolina_panther.last_name %></td>
+        <td><%= carolina_panther.first_name %></td>
+        <td><%= carolina_panther.number %></td>
+        <td><%= carolina_panther.position %></td>
+        <td><%= carolina_panther.age %></td>
+        <td><%= carolina_panther.years_pro %></td>
+        <td><%= link_to 'Show', carolina_panther %></td>
+        <td><%= link_to 'Edit', edit_carolina_panther_path(carolina_panther) %></td>
+        <td><%= link_to 'Destroy', carolina_panther, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Carolina panther', new_carolina_panther_path %>

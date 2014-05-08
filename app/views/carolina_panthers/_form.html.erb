@@ -1,0 +1,41 @@
+<%= form_for(@carolina_panther) do |f| %>
+  <% if @carolina_panther.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@carolina_panther.errors.count, "error") %> prohibited this carolina_panther from being saved:</h2>
+
+      <ul>
+      <% @carolina_panther.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+ <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_area :position %>
+  </div>
+     <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :years_pro %><br>
+    <%= f.number_field :years_pro %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
